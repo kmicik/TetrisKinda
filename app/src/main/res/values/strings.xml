@@ -23,4 +23,5 @@
     <string name="pwl_site">https://www.youtube.com/watch?v=rJcm5Oyi3YA&amp;list=PLWweaDaGRHjvQlpLV0yZDmRKVBdy6rSlg</string>
     <string name="cited_clone_dc">Dry Code:  </string>
     <string name="dc_site">https://www.youtube.com/watch?v=vKeMrkDLkmk&amp;t=2040s</string>
+    <string name="game_over">GAME OVER</string>
 </resources>

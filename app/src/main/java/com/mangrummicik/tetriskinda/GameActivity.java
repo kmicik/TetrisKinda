@@ -1,6 +1,7 @@
 package com.mangrummicik.tetriskinda;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -34,7 +35,7 @@ public class GameActivity extends Activity {
 
     ImageButton leftIb, rightIb, downIb, rotateIb;
 
-    TextView levelTv, scoreTv;
+    //TextView levelTv, scoreTv;
 
     String St = "";
     int score = 0;
@@ -290,8 +291,11 @@ public class GameActivity extends Activity {
         rotateIb = findViewById(R.id.rotateImageButton);
         rightIb = findViewById(R.id.rightImageButton);
 
-        levelTv = findViewById(R.id.levelTextView);
-        scoreTv = findViewById(R.id.scoreTextView);
+        TextView levelTv = findViewById(R.id.levelTextView);
+        levelTv.setText("Level:  " + level);
+
+        TextView scoreTv = findViewById(R.id.scoreTextView);
+        scoreTv.setText("Score: " + score);
 
         newBrick();
         gameUpdate();
@@ -834,10 +838,11 @@ public class GameActivity extends Activity {
                     carryStatus[j][0] = false;
                 }
                 score += 10;
-                //scoreTv.setText(score);
+
+
+
                 if ((score == 250) || (score == 500) || (score == 750) || (score == 1000) || (score == 1250)) {
                     level++;
-                    levelTv.setText(level);
                 }
                 gameUpdate();
                 i++;
@@ -849,10 +854,11 @@ public class GameActivity extends Activity {
             }
         }
     }
+
     void gameover() {
         int x;
         int y;
-        St = "Game Over";
+        //St = "Game Over";
 
         for (x = 0; x < 10; x++) {
             for (y = 0; y < 16; y++) {
@@ -869,6 +875,8 @@ public class GameActivity extends Activity {
         }
         level = 1;
         score = 0;
+
+        startActivity(new Intent(GameActivity.this, GameOver.class));
     }
     void newBrick() {
         checkGameover();

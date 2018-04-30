@@ -19,10 +19,14 @@
         <activity
             android:name=".GameActivity"
             android:label="Tetris Kinda">
-    </activity>
+        </activity>
         <activity
             android:name=".About"
             android:label="About Tetris Kinda">
+        </activity>
+        <activity
+            android:name=".GameOver"
+            android:label="Tetris Kinda Game Over">
         </activity>
     </application>
 
