@@ -5,8 +5,22 @@
     <string name="programmed">This application clone programmed by:   Kristopher Micik</string>
     <string name="images">Images created by Kristopher Micik</string>
     <string name="researched_code">Other Tetris\u00AE application clones and informative blogs researched to create this clone:</string>
-    <string name="cited_clones">Michael James Williams:  </string>
-    <string name="mjw_site">https://gamedevelopment.tutsplus.com/series/implementing-tetris--gamedev-12717\n
-        https://gamedevelopment.tutsplus.com/tutorials/implementing-tetris-collision-detection--gamedev-852\n
+    <string name="cited_clones_mjw">Michael James Williams:  </string>
+    <string name="mjw_site">https://gamedevelopment.tutsplus.com/series/implementing-tetris--gamedev-12717\n\n
+        https://gamedevelopment.tutsplus.com/tutorials/implementing-tetris-collision-detection--gamedev-852\n\n
         https://gamedevelopment.tutsplus.com/tutorials/implementing-tetris-clearing-lines--gamedev-1197</string>
+    <string name="cited_clones_co">Ciprian Olariu:  </string>
+    <string name="co_site">https://github.com/scipianus/Amazing-Tetris/tree/master/app/src/main/res</string>
+    <string name="cited_clone_sdb">Steven De Bock:  </string>
+    <string name="sdb_site">http://stevendebock.blogspot.com/2014/03/touch-based-android-tetris.html</string>
+    <string name="cited_clone_jg">Jon Gjengset:  </string>
+    <string name="jg_site">https://github.com/jonhoo/tetris-tutorial</string>
+    <string name="cited_clone_rc">Retro Chicken: </string>
+    <string name="rc_site">https://www.youtube.com/watch?v=OojQitoAEXs&amp;list=PL2xjPbQaM7JZ_FmXwTAesiAciHEPlGmiW</string>
+    <string name="cited_clone_st">SPKT TAD:  </string>
+    <string name="st_site">https://www.youtube.com/watch?v=4WHkCe7OKN0&amp;t=10s</string>
+    <string name="cited_clone_pwl">Paymon Wang Lotfi:  </string>
+    <string name="pwl_site">https://www.youtube.com/watch?v=rJcm5Oyi3YA&amp;list=PLWweaDaGRHjvQlpLV0yZDmRKVBdy6rSlg</string>
+    <string name="cited_clone_dc">Dry Code:  </string>
+    <string name="dc_site">https://www.youtube.com/watch?v=vKeMrkDLkmk&amp;t=2040s</string>
 </resources>

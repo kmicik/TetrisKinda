@@ -20,6 +20,10 @@
             android:name=".GameActivity"
             android:label="Tetris Kinda">
     </activity>
+        <activity
+            android:name=".About"
+            android:label="About Tetris Kinda">
+        </activity>
     </application>
 
 </manifest>

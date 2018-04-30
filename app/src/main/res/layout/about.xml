@@ -61,11 +61,12 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/researched_code"
                 android:textColor="@color/solid_black"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/researchTextViewMJW"
@@ -75,17 +76,181 @@
                 android:paddingRight="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:text="@string/cited_clones" />
+                android:text="@string/cited_clones_mjw"
+                android:textColor="@color/solid_black"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/researchTextViewMJWsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/mjw_site"
+                android:textColor="@color/solid_black"/>
+
+            <TextView
+                android:id="@+id/researchTextViewCO"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:text="@string/mjw_site" />
+                android:textColor="@color/solid_black"
+                android:textStyle="bold"
+                android:text="@string/cited_clones_co" />
+
+            <TextView
+                android:id="@+id/researchTextViewCOsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/co_site"
+                android:textColor="@color/solid_black"/>
+
+            <TextView
+                android:id="@+id/researchTextViewSDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/solid_black"
+                android:textStyle="bold"
+                android:text="@string/cited_clone_sdb" />
+
+            <TextView
+                android:id="@+id/researchTextViewSDBsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/sdb_site"
+                android:textColor="@color/solid_black"/>
+
+            <TextView
+                android:id="@+id/researchTextViewJG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/solid_black"
+                android:textStyle="bold"
+                android:text="@string/cited_clone_jg" />
+
+            <TextView
+                android:id="@+id/researchTextViewJGsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/jg_site"
+                android:textColor="@color/solid_black"/>
+
+            <TextView
+                android:id="@+id/researchTextViewRC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/solid_black"
+                android:textStyle="bold"
+                android:text="@string/cited_clone_rc" />
+
+            <TextView
+                android:id="@+id/researchTextViewRCsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/rc_site"
+                android:textColor="@color/solid_black"/>
+
+            <TextView
+                android:id="@+id/researchTextViewST"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/solid_black"
+                android:textStyle="bold"
+                android:text="@string/cited_clone_st" />
+
+            <TextView
+                android:id="@+id/researchTextViewSTsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/st_site"
+                android:textColor="@color/solid_black"/>
+
+            <TextView
+                android:id="@+id/researchTextViewPWL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/solid_black"
+                android:textStyle="bold"
+                android:text="@string/cited_clone_pwl" />
+
+            <TextView
+                android:id="@+id/researchTextViewPWLsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/pwl_site"
+                android:textColor="@color/solid_black"/>
+
+            <TextView
+                android:id="@+id/researchTextViewDC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/solid_black"
+                android:textStyle="bold"
+                android:text="@string/cited_clone_dc" />
+
+            <TextView
+                android:id="@+id/researchTextViewDCsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/dc_site"
+                android:textColor="@color/solid_black"/>
         </LinearLayout>
     </ScrollView>
 
