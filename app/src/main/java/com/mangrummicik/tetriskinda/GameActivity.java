@@ -863,7 +863,7 @@ public class GameActivity extends Activity {
         }
         level = 1;
         score = 0;
-        myHandle.removeCallbacksAndMessages(null);
+
         startActivity(new Intent(GameActivity.this, GameOver.class));
     }
     void newBrick() {

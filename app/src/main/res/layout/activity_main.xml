@@ -17,9 +17,9 @@
         android:id="@+id/newGame_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="201dp"
+        android:layout_marginBottom="204dp"
         android:text="NEW GAME" />
 
     <Button
@@ -30,4 +30,23 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="122dp"
         android:text="ABOUT" />
+
+    <ImageView
+        android:id="@+id/imageView161"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView161"
+        android:layout_centerHorizontal="true"
+        android:text="Kinda"
+        android:textColor="@color/solid_black"
+        android:textSize="25sp" />
 </RelativeLayout>
