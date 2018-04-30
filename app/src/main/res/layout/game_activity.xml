@@ -1377,7 +1377,7 @@
 
     <TextView
         android:id="@+id/scoreTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="14dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="72dp"
         android:layout_marginTop="8dp"

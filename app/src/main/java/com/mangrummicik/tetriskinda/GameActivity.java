@@ -35,9 +35,7 @@ public class GameActivity extends Activity {
 
     ImageButton leftIb, rightIb, downIb, rotateIb;
 
-    //TextView levelTv, scoreTv;
-
-    String St = "";
+    int speed = 1000;
     int score = 0;
     int level = 1;
     int tiles;
@@ -291,12 +289,6 @@ public class GameActivity extends Activity {
         rotateIb = findViewById(R.id.rotateImageButton);
         rightIb = findViewById(R.id.rightImageButton);
 
-        TextView levelTv = findViewById(R.id.levelTextView);
-        levelTv.setText("Level:  " + level);
-
-        TextView scoreTv = findViewById(R.id.scoreTextView);
-        scoreTv.setText("Score: " + score);
-
         newBrick();
         gameUpdate();
 
@@ -304,7 +296,7 @@ public class GameActivity extends Activity {
             @Override
             public void run() {
                 for (;;) {
-                    SystemClock.sleep(800);
+                    SystemClock.sleep(speed);
                     Message msg = myHandle.obtainMessage();
                     msg.arg1 = 1;
                     myHandle.sendMessage(msg);
@@ -814,15 +806,15 @@ public class GameActivity extends Activity {
     void checkGameover() {
         int i;
         int j;
-        int cnt;
+        int count;
         for (i = 15; i >= 0; i--) {
-            cnt = 0;
+            count = 0;
             for (j = 0; j < 10; j++) {
                 if (carryStatus[j][i]) {
-                    cnt++;
+                    count++;
                 }
             }
-            if (cnt == 10) {
+            if (count == 10) {
                 for (j = 0; j < 10; j++) {
                     carryStatus[j][i] = false;
                 }
@@ -839,9 +831,7 @@ public class GameActivity extends Activity {
                 }
                 score += 10;
 
-
-
-                if ((score == 250) || (score == 500) || (score == 750) || (score == 1000) || (score == 1250)) {
+                if ((score == 100) || (score == 200) || (score == 300) || (score == 400) || (score == 500 || score == 600 || score == 700 || score == 800 || score == 900 || score == 1000)) {
                     level++;
                 }
                 gameUpdate();
@@ -858,8 +848,6 @@ public class GameActivity extends Activity {
     void gameover() {
         int x;
         int y;
-        //St = "Game Over";
-
         for (x = 0; x < 10; x++) {
             for (y = 0; y < 16; y++) {
                 if (brickTile[x][y]) {
@@ -875,7 +863,7 @@ public class GameActivity extends Activity {
         }
         level = 1;
         score = 0;
-
+        myHandle.removeCallbacksAndMessages(null);
         startActivity(new Intent(GameActivity.this, GameOver.class));
     }
     void newBrick() {
@@ -1077,6 +1065,32 @@ public class GameActivity extends Activity {
                     blankTiles(row, col);
                 }
             }
+        }
+
+        TextView levelTv = findViewById(R.id.levelTextView);
+        levelTv.setText("Level:  " + level);
+
+        TextView scoreTv = findViewById(R.id.scoreTextView);
+        scoreTv.setText("Score: " + score);
+
+        if (level == 2) {
+            speed = 950;
+        } else if (level == 3) {
+            speed = 900;
+        } else if (level == 4) {
+            speed = 850;
+        } else if (level == 5) {
+            speed = 800;
+        } else if (level == 6) {
+            speed = 750;
+        } else if (level == 7) {
+            speed = 700;
+        } else if (level == 8) {
+            speed = 650;
+        } else if (level == 9) {
+            speed = 600;
+        } else if (level == 10) {
+            speed = 550;
         }
     }
 
