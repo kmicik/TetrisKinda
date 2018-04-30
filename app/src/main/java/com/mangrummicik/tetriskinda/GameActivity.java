@@ -863,8 +863,8 @@ public class GameActivity extends Activity {
         }
         level = 1;
         score = 0;
-
         startActivity(new Intent(GameActivity.this, GameOver.class));
+        GameActivity.this.finish();
     }
     void newBrick() {
         checkGameover();
