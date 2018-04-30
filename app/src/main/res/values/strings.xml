@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Tetris Kinda</string>
+    <string name="about">About This App</string>
+    <string name="game_created_by">This application is a simple clone of the game Tetris\u00AE created by Alexey Pajitnov, more information can be found at https://tetris.com/about-us</string>
+    <string name="programmed">This application clone programmed by:   Kristopher Micik</string>
+    <string name="images">Images created by Kristopher Micik</string>
+    <string name="researched_code">Other Tetris\u00AE application clones and informative blogs researched to create this clone:</string>
+    <string name="cited_clones">Michael James Williams:  </string>
+    <string name="mjw_site">https://gamedevelopment.tutsplus.com/series/implementing-tetris--gamedev-12717\n
+        https://gamedevelopment.tutsplus.com/tutorials/implementing-tetris-collision-detection--gamedev-852\n
+        https://gamedevelopment.tutsplus.com/tutorials/implementing-tetris-clearing-lines--gamedev-1197</string>
 </resources>
